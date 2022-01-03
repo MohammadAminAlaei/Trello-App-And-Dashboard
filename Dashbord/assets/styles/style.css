@@ -1,0 +1,490 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular-Italic";
+  src: url("../../assets/fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+}
+.font-light {
+  font-family: "Roboto-Light" !important;
+}
+
+.font-bold {
+  font-family: "Roboto-Bold" !important;
+}
+
+.font-regular {
+  font-family: "Roboto" !important;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.4rem;
+  gap: 3.2rem;
+}
+@media all and (min-width: 767px) {
+  .main {
+    flex-direction: row;
+    margin: 1.6rem 0;
+  }
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular-Italic";
+  src: url("../../assets/fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+}
+.font-light {
+  font-family: "Roboto-Light" !important;
+}
+
+.font-bold {
+  font-family: "Roboto-Bold" !important;
+}
+
+.font-regular {
+  font-family: "Roboto" !important;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular-Italic";
+  src: url("../../assets/fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+}
+.font-light {
+  font-family: "Roboto-Light" !important;
+}
+
+.font-bold {
+  font-family: "Roboto-Bold" !important;
+}
+
+.font-regular {
+  font-family: "Roboto" !important;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.4rem;
+  gap: 3.2rem;
+}
+@media all and (min-width: 767px) {
+  .main {
+    flex-direction: row;
+    margin: 1.6rem 0;
+  }
+}
+
+.main__left {
+  display: flex;
+  flex-direction: column;
+}
+@media all and (min-width: 767px) {
+  .main__left {
+    min-width: 20%;
+    border-right: 1px solid #91f294;
+  }
+}
+.main__left__title {
+  font-size: 2.4rem;
+}
+.main__left__ul {
+  margin-top: 3.2rem;
+}
+.main__left__ul li {
+  line-height: 4rem;
+  list-style: none;
+}
+.main__left__ul li a {
+  font-size: 1.6rem;
+  display: block;
+  text-decoration: none;
+  color: #999999;
+  border-right: 0.4rem solid transparent;
+}
+.main__left__ul li a i {
+  margin-right: 1.6rem;
+}
+.main__left__ul li:hover a:hover, .main__left__ul li:hover a:focus {
+  color: #000;
+  border-right: 0.4rem solid #00bd08;
+}
+.main__left__ul__chat__a {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__left__ul__chat__badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbae18;
+  border-radius: 0.8rem;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.8rem;
+}
+
+@media all and (min-width: 767px) {
+  .ul-second {
+    margin-top: 30rem;
+  }
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular-Italic";
+  src: url("../../assets/fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+}
+.font-light {
+  font-family: "Roboto-Light" !important;
+}
+
+.font-bold {
+  font-family: "Roboto-Bold" !important;
+}
+
+.font-regular {
+  font-family: "Roboto" !important;
+}
+
+.main__right {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+}
+@media all and (min-width: 767px) {
+  .main__right {
+    margin-top: 0;
+  }
+}
+.main__right__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+@media all and (min-width: 767px) {
+  .main__right__menu {
+    flex-direction: row;
+    margin-bottom: 3.2rem;
+  }
+}
+.main__right__menu__input {
+  padding: 1.2rem;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 0.8rem;
+  outline: none;
+}
+@media all and (min-width: 767px) {
+  .main__right__menu__input {
+    flex: 1;
+  }
+}
+.main__right__menu__icons {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+@media all and (max-width: 767px) {
+  .main__right__menu__icons {
+    margin: 2.4rem auto;
+  }
+}
+.main__right__menu__icons i {
+  font-size: 2.4rem;
+}
+.main__right__menu__icons__question {
+  color: #999999;
+}
+.main__right__menu__icons__bell:after {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #dcc596;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(145%, -270%);
+}
+.main__right__menu__icons__a {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.8rem;
+  color: #000;
+}
+.main__right__menu__icons__a__arrow {
+  font-size: 1.6rem !important;
+}
+.main__right__menu__icons__figure {
+  width: 5rem;
+  height: 5rem;
+}
+.main__right__menu__icons__figure__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular-Italic";
+  src: url("../../assets/fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+}
+.font-light {
+  font-family: "Roboto-Light" !important;
+}
+
+.font-bold {
+  font-family: "Roboto-Bold" !important;
+}
+
+.font-regular {
+  font-family: "Roboto" !important;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.section__project {
+  display: flex;
+  justify-content: space-between;
+}
+.section__project__text {
+  font-size: 3.2rem;
+}
+.section__project__link {
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+.section__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+@media all and (min-width: 1024px) {
+  .section__cards {
+    flex-direction: row;
+  }
+}
+.section__cards__todo {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #daf8f0c7;
+  border-radius: 0.8rem;
+  gap: 1.6rem;
+  flex: 1;
+}
+@media all and (min-width: 767px) {
+  .section__cards__todo {
+    display: block;
+  }
+}
+@media all and (min-width: 767px) and (max-width: 1024px) {
+  .section__cards__todo {
+    width: 100%;
+  }
+}
+.section__cards__todo__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+.section__cards__todo__title__text {
+  font-size: 1.6rem;
+  font-family: Roboto-Bold, serif;
+}
+.section__cards__todo__title__badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #279187;
+  background-color: #bdefea;
+  font-size: 1.6rem;
+  border-radius: 0.8rem;
+}
+.section__cards__todo__btn {
+  padding: 0.4rem 0;
+  display: block;
+  margin: auto;
+  font-size: 2.4rem;
+  width: 100%;
+  color: #279187;
+  border: none;
+  background-color: #2791872b;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+@media all and (min-width: 767px) {
+  .section__cards__todo__btn {
+    margin: 2.4rem 0;
+  }
+}
+.section__cards__todo__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+}
+@media all and (min-width: 767px) {
+  .section__cards__todo__card {
+    margin: 2.4rem 0;
+  }
+}
+.section__cards__todo__card__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+.section__cards__todo__card__title__text {
+  font-size: 1.6rem;
+  font-family: Roboto-Bold, serif;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.section__cards__todo__card__title__text__after {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #2791879c;
+  border-radius: 50%;
+}
+.section__cards__todo__card__title__icon {
+  font-size: 1.6rem;
+  color: #999999;
+}
+.section__cards__todo__card__article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.section__cards__todo__card__article__text, .section__cards__todo__card__article__paragraph {
+  font-size: 1.2rem;
+  color: #999999;
+  line-height: 1.8rem;
+}
+.section__cards__todo__card__article__member, .section__cards__todo__card__article__member__progress, .section__cards__todo__card__article__member__dev, .section__cards__todo__card__article__member__sub, .section__cards__todo__card__article__member__progress__sub {
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #f79738;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.section__cards__todo__card__article__member__sub, .section__cards__todo__card__article__member__progress__sub {
+  background-color: #946ef7;
+  position: absolute;
+  transform: translateX(60%);
+}
+.section__cards__todo__card__article__member__dev {
+  background-color: #fee171;
+}
+.section__cards__todo__card__article__member__progress {
+  background-color: #91f294;
+}
+.section__cards__todo__card__article__member__progress__sub {
+  background-color: #4066ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+  font-family: "Roboto", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1600px;
+  margin: auto;
+  padding: 0.8rem;
+}
+@media all and (min-width: 767px) {
+  .container {
+    padding: 1.6rem 3.2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

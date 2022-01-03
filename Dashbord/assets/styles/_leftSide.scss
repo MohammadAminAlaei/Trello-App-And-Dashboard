@@ -1,0 +1,78 @@
+@import "index";
+@import "main";
+
+
+.main__left {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-desktop {
+    min-width: 20%;
+    border-right: 1px solid #91f294;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+  }
+
+  &__ul {
+
+    margin-top: 3.2rem;
+
+    li {
+      line-height: 4rem;
+      list-style: none;
+
+
+      a {
+        font-size: 1.6rem;
+        display: block;
+        text-decoration: none;
+        color: $secondary-text-color;
+        border-right: .4rem solid transparent;
+
+        i {
+          margin-right: 1.6rem;
+        }
+
+      }
+
+    }
+
+    li:hover {
+      a:hover, a:focus {
+        color: $primary-text-color;
+        border-right: .4rem solid #00bd08;
+      }
+    }
+
+    &__chat {
+
+      &__a {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__badges {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fbae18;
+        border-radius: $border-radius;
+        color: #fff;
+        width: 3rem;
+        height: 3rem;
+        margin-right: .8rem;
+      }
+    }
+
+  }
+
+}
+
+.ul-second {
+  @include tablet-desktop {
+    margin-top: 30rem;
+  }
+}

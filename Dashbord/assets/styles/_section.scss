@@ -1,0 +1,183 @@
+@import "index";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  &__project {
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+      font-size: 3.2rem;
+    }
+
+    &__link {
+      gap: .8rem;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      color: $primary-text-color;
+      text-decoration: none;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    @include just-desktop{
+      flex-direction: row;
+    }
+
+    &__todo {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      background-color: #daf8f0c7;
+      border-radius: $border-radius;
+      gap: 1.6rem;
+      flex: 1;
+      @include tablet-desktop{
+        display: block;
+      }
+      @include just-tablet{
+        width: 100%;
+      }
+
+      &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.6rem;
+
+        &__text {
+          font-size: 1.6rem;
+          font-family: Roboto-Bold, serif;
+        }
+
+        &__badges {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 2.4rem;
+          height: 2.4rem;
+          color: #279187;
+          background-color: #bdefea;
+          font-size: 1.6rem;
+          border-radius: $border-radius;
+        }
+      }
+
+      &__btn {
+        padding: .4rem 0;
+        display: block;
+        margin: auto;
+        font-size: 2.4rem;
+        width: 100%;
+        color: #279187;
+        border: none;
+        background-color: #2791872b;
+        border-radius: $border-radius;
+        cursor: pointer;
+        @include tablet-desktop{
+          margin: 2.4rem 0;
+        }
+      }
+
+      &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        background-color: #fff;
+        padding: 1.6rem;
+        border-radius: $border-radius;
+        @include tablet-desktop{
+          margin: 2.4rem 0;
+        }
+
+        &__title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1.6rem;
+
+          &__text {
+            font-size: 1.6rem;
+            font-family: Roboto-Bold, serif;
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+
+            &__after {
+              width: .5rem;
+              height: .5rem;
+              background-color: #2791879c;
+              border-radius: 50%;
+            }
+          }
+
+          &__icon {
+            font-size: 1.6rem;
+            color: $secondary-text-color;
+          }
+        }
+
+        &__article {
+          display: flex;
+          flex-direction: column;
+          gap: 1.6rem;
+
+          &__text, &__paragraph {
+            font-size: 1.2rem;
+            color: $secondary-text-color;
+            line-height: 1.8rem;
+          }
+
+          &__member {
+            position: relative;
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #f79738;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+
+            &__sub {
+              @extend .section__cards__todo__card__article__member;
+              background-color: #946ef7;
+              position: absolute;
+              transform: translateX(60%);
+            }
+
+            &__dev {
+              @extend .section__cards__todo__card__article__member;
+              background-color: #fee171;
+            }
+
+            &__progress {
+              @extend .section__cards__todo__card__article__member;
+              background-color: #91f294;
+
+              &__sub {
+                @extend .section__cards__todo__card__article__member__sub;
+                background-color: #4066ee;
+              }
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+
+
+

@@ -1,0 +1,148 @@
+@import "index";
+
+.card {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+
+  @include tablet-desktop {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  &__task {
+    margin: .8rem 0;
+    border-radius: .8rem;
+    min-height: 30rem;
+    padding: 1.6rem;
+    background: linear-gradient(135deg, #0269A4, #00B4AB);
+    color: #011B56;
+
+
+    @include tablet-desktop {
+      flex-grow: 1;
+      flex-wrap: wrap;
+      width: 30%;
+    }
+
+    &__header:after {
+      content: '';
+      width: 50%;
+      height: .2rem;
+      background-color: #000957;
+      display: block;
+      margin: 1.6rem auto;
+    }
+  }
+
+  &__doing {
+    @extend .card__task;
+    background: linear-gradient(135deg, #FFE400, #FF8E00);
+    color: #FF5403;
+
+    &__header:after {
+      @extend .card__task__header;
+      background-color: #FF5403;
+    }
+  }
+
+  &__done {
+    @extend .card__task;
+    background: linear-gradient(135deg, #34BE82, #2FDD92);
+    color: #125C13;
+
+    &__header:after {
+      @extend .card__task__header;
+      background-color: #125C13;
+    }
+  }
+
+}
+
+.create {
+  margin: 1.6rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #17a2b8;
+  border-radius: .8rem;
+  padding: 1.6rem .8rem;
+  color: #000;
+  overflow: auto;
+
+  &__doing {
+    @extend .create;
+    background-color: #ffc107;
+  }
+
+  &__done {
+    @extend .create;
+    background-color: #28a745;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 2.6rem;
+    font-family: Roboto-Bold, serif;
+
+    &__button {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      min-width: 3rem;
+      font-size: 1.6rem;
+      border: none;
+      border-radius: .8rem;
+      cursor: pointer;
+      background-color: #BD1616;
+      color: #fff;
+    }
+  }
+
+  &__sub {
+    margin: 2.4rem 0;
+    font-size: 1.8rem;
+  }
+
+  &__buttons {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: .8rem;
+    border-radius: .8rem;
+
+    button {
+      width: 100%;
+      display: block;
+      padding: 1rem 0;
+      cursor: pointer;
+      border-radius: .8rem;
+      color: #fff;
+    }
+
+    &__task {
+      background:#007bff;
+      border: 1px solid #011B56;
+    }
+
+    &__doing {
+      background-color: #ffc107;
+      border: 1px solid #bd9200;
+    }
+
+    &__done {
+      background-color: #28a745;
+      border: 1px solid #008324;
+    }
+  }
+
+  &__dueDate {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+

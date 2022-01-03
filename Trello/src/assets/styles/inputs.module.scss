@@ -1,0 +1,41 @@
+@import "index";
+
+$margin-input: 1rem 0;
+$border-raduis: .8rem;
+
+.input_div {
+  display: flex;
+  flex-direction: column;
+  margin: $margin-input;
+  gap: .8rem;
+  @include tablet-desktop{
+    flex-direction: row;
+  }
+
+  &__inputs {
+    padding: 1.2rem .8rem;
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: $border-raduis;
+    @include tablet-desktop{
+      flex-grow: 1;
+    }
+  }
+
+  &__inputs:hover {
+    background: #fff;
+  }
+}
+
+.button {
+  padding: 1.6rem .8rem;
+  background: linear-gradient(45deg, #1597E5, #2FDD92);
+  font-size: 1.6rem;
+  color: #fff;
+  border: none;
+  border-radius: $border-raduis;
+  cursor: pointer;
+  min-width: 200px;
+}
+

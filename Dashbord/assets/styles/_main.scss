@@ -1,0 +1,14 @@
+@import "index";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: .4rem;
+  gap: 3.2rem;
+
+  @include tablet-desktop {
+    flex-direction: row;
+    margin: 1.6rem 0;
+  }
+}
+

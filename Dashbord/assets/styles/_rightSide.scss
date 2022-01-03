@@ -1,0 +1,90 @@
+@import "index";
+
+.main__right {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  @include tablet-desktop {
+    margin-top: 0;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    @include tablet-desktop {
+      flex-direction: row;
+      margin-bottom: 3.2rem;
+    }
+
+    &__input {
+      padding: 1.2rem;
+      border: none;
+      background-color: #f2f2f2;
+      border-radius: $border-radius;
+      outline: none;
+
+      @include tablet-desktop {
+        flex: 1;
+      }
+    }
+
+    &__icons {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      @include just-mobile {
+        margin: 2.4rem auto;
+      }
+
+
+      i {
+        font-size: 2.4rem;
+      }
+
+      &__question {
+        color: $secondary-text-color;
+      }
+
+      &__bell:after {
+        content: '';
+        width: .8rem;
+        height: .8rem;
+        background-color: #dcc596;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(145%, -270%);
+      }
+
+      &__a {
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: .8rem;
+        color: $primary-text-color;
+
+        &__arrow {
+          font-size: 1.6rem !important;
+        }
+      }
+
+
+      &__figure {
+        width: 5rem;
+        height: 5rem;
+
+        &__img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+
+    }
+
+
+  }
+}
+
